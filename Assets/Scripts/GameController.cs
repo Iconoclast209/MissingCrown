@@ -99,6 +99,16 @@ public class GameController : MonoBehaviour
         levelManager.LoadLevel(3);
     }
 
+    public void WinGame()
+    {
+        Debug.Log("GameController.WinGame has been called.");
+        Invoke("LoadWinScreen", 2.0f);
+    }
+
+    private void LoadWinScreen()
+    {
+        levelManager.LoadLevel(4);
+    }
     
 
 }

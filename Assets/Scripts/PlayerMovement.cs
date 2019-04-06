@@ -12,10 +12,12 @@ public class PlayerMovement : MonoBehaviour
     float initialRunSpeed;
     bool jump = false;
     bool crouch = false;
+    private GameController gameController;
 
     private void Awake()
     {
         initialRunSpeed = runSpeed;
+        gameController = FindObjectOfType<GameController>();
     }
 
 
@@ -63,6 +65,11 @@ public class PlayerMovement : MonoBehaviour
         {
             //Kill the enemy
             other.GetComponentInParent<Enemy>().Death();
+        }
+        if(other.CompareTag("King"))
+        {
+            other.GetComponentInParent<Enemy>().Death();
+            gameController.WinGame();
         }
         
     }
