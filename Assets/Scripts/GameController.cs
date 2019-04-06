@@ -24,6 +24,7 @@ public class GameController : MonoBehaviour
     {
         //Find the Shredder and store a reference to it.
         shredder = FindObjectOfType<Shredder>();
+
         //Find the Level Manager and store a reference to it.
         levelManager = FindObjectOfType<LevelManager>();
     }
@@ -34,16 +35,15 @@ public class GameController : MonoBehaviour
         livesLeft--;
         //Update UI Objects
         UpdateSprites();
+        imageOops.SetActive(true);
+        player.GetComponent<PlayerMovement>().PausePlayerControl();
+
         if (livesLeft <= 0)
          {
-            imageOops.SetActive(true);
-            player.GetComponent<PlayerMovement>().PausePlayerControl();
             Invoke("EndGame", playerRespawnTime);
          }
         else
         {
-            imageOops.SetActive(true);
-            player.GetComponent<PlayerMovement>().PausePlayerControl();
             Invoke("ResetPlayer", playerRespawnTime);
         }
     }
@@ -69,14 +69,29 @@ public class GameController : MonoBehaviour
         {
             life1.GetComponent<Image>().sprite = red;
         }
-        
     }
 
-    private void ReloadLevel()
+    public void ResetPlayer()
     {
-        //imageOops.SetActive(false);
-        //shredder.ResetPlayerIsAlive();
-        levelManager.ReloadLevel();
+        Debug.Log("Resetting Player.");
+        //Move Player back to spawn position
+        player.transform.position = playerSpawnPosition;
+        ResetEnemies();
+        //Re-enable player control.
+        player.GetComponent<PlayerMovement>().ResumePlayerControl();
+    }
+
+    public void ResetEnemies()
+    {
+        //destroy then reload all enemies.
+        Debug.Log("Resetting Enemies.");
+        ResetOops();
+    }
+
+    public void ResetOops()
+    {
+        imageOops.SetActive(false);
+        shredder.ResetPlayerIsAlive();
     }
 
     private void EndGame()
