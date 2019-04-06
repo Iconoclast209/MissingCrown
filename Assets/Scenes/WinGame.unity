@@ -200,8 +200,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 448270350}
-  - component: {fileID: 448270349}
   - component: {fileID: 448270351}
+  - component: {fileID: 448270349}
   m_Layer: 0
   m_Name: Text Controller
   m_TagString: Untagged
@@ -218,15 +218,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 448270348}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 514cce45e839f7349bb416afe84b1a30, type: 3}
+  m_Script: {fileID: 11500000, guid: ce19dae95a219b5418fcf6085631e75f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   textBoxes:
-  - {fileID: 21300000, guid: 1299ebd0a9dd0fd44a5796e878efc8c1, type: 3}
-  - {fileID: 21300000, guid: 23435509426241a4795c1a0db8874be0, type: 3}
-  - {fileID: 21300000, guid: 121a171466312ac46ad72ed49b933570, type: 3}
-  - {fileID: 21300000, guid: 08a9b61496109734a84addf9aa35fef1, type: 3}
-  timeForText: 4
+  - {fileID: 21300000, guid: a6d51c88d051777458b561588a1da755, type: 3}
+  - {fileID: 21300000, guid: ba69fae9526a8834ba25fdee0d42f085, type: 3}
+  timeForText: 3
   imageObject: {fileID: 1563825524}
   levelManager: {fileID: 1946554308}
 --- !u!4 &448270350
@@ -1687,7 +1685,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 1299ebd0a9dd0fd44a5796e878efc8c1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a6d51c88d051777458b561588a1da755, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
