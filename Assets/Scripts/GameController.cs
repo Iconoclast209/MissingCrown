@@ -96,7 +96,7 @@ public class GameController : MonoBehaviour
 
     private void EndGame()
     {
-        levelManager.LoadLevel(3);
+        levelManager.LoadLevel(4);
     }
 
     public void WinGame()
@@ -107,7 +107,7 @@ public class GameController : MonoBehaviour
 
     private void LoadWinScreen()
     {
-        levelManager.LoadLevel(4);
+        levelManager.LoadLevel(5);
     }
     
 

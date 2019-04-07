@@ -45,7 +45,7 @@ public class WinGameTextController : MonoBehaviour
         {
             imageObject.SetActive(false);
             //Load Menu
-            levelManager.LoadLevel(0);
+            levelManager.LoadLevel(1);
         }
     }
 

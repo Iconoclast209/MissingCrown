@@ -224,7 +224,7 @@ MonoBehaviour:
   textBoxes:
   - {fileID: 21300000, guid: a6d51c88d051777458b561588a1da755, type: 3}
   - {fileID: 21300000, guid: ba69fae9526a8834ba25fdee0d42f085, type: 3}
-  timeForText: 3
+  timeForText: 4
   imageObject: {fileID: 1563825524}
   levelManager: {fileID: 1946554308}
 --- !u!4 &448270350
