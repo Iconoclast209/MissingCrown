@@ -85,11 +85,17 @@ public class Enemy : MonoBehaviour
         theScale.y *= -1;
         transform.localScale = theScale;
 
+        //Move downwards to meet the ground
+        Vector3 newPosition = transform.position;
+        newPosition.y -= 0.4f;
+        transform.position = newPosition;
+
         //Stop Movement
         isMoving = false;
         animator.SetBool("possumIsIdle", true);
 
-        //Deactivate colliders
+        //Deactivate rigidbody
+        GetComponent<Rigidbody2D>().simulated = false;
 
 
         //Disappear
