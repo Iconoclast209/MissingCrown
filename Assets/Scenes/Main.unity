@@ -5786,7 +5786,7 @@ PrefabInstance:
     - target: {fileID: 4912614596854551577, guid: 1331fa02e773f104d8087635f2e22a09,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4912614596854551577, guid: 1331fa02e773f104d8087635f2e22a09,
         type: 3}
@@ -6159,7 +6159,7 @@ PrefabInstance:
     - target: {fileID: 7740865901374135969, guid: 550e40e02c97b0440aad36f9b77b8047,
         type: 3}
       propertyPath: playerSpawnPosition.y
-      value: 4
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7740865901374135969, guid: 550e40e02c97b0440aad36f9b77b8047,
         type: 3}
